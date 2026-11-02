@@ -1,6 +1,16 @@
+# Python
 venv/
 .venv/
 __pycache__/
 *.pyc
-.env
+
+# Node.js
 node_modules/
+
+# Environment files
+.env
+.env.*
+
+# Build files
+dist/
+build/

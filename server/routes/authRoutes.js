@@ -1,0 +1,21 @@
+const express = require("express");
+
+console.log("Auth Routes Loaded");
+
+const router = express.Router();
+
+const {
+    register,
+    login
+} = require("../controllers/authController");
+
+router.post("/register", register);
+
+router.post("/login", login);
+
+router.get("/test", (req, res) => {
+    res.send("Auth Route Working");
+});
+
+module.exports = router;
+
